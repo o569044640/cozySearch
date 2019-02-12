@@ -1,10 +1,20 @@
 
-<div class="container" >
-    <form>
-      <div class="input-group" style="margin-left: auto; margin-right: auto;">
-        <svg-icon class="input-group-text" src="assets/google.svg" [svgStyle]="{ 'width.px':20}"></svg-icon>
-        <input id="searchString" type="text" placeholder="Search for what you want!" style="width: 70%">
-        <button type="submit" class="btn btn-primary">Submit</button>
+
+
+  <div class="container center" >
+  <form id="search-form" action="//www.google.com" target="_blank" class="center">
+    <div class="dropdown">
+      <button class="dropbtn">Dropdown</button>
+      <div class="dropdown-content">
+          <svg-icon class="input-group-text" src="assets/google.svg" [svgStyle]="{ 'width.px':20}"></svg-icon>Google
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
       </div>
-    </form>
-  </div>
+    </div>
+    <input type="text" id="searchword" name="word" size="40" class="input2"> 
+    <input type="submit" class="btn btn-primary" id="b-btn" value="Go!">
+</form>
+</div>  
+
+
