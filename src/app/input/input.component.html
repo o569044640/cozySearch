@@ -1,19 +1,23 @@
-
-
-
-  <div class="container center" >
+<div class="container center" >
   <form id="search-form" action="//www.google.com" target="_blank" class="center">
     <div class="dropdown">
-      <button class="dropbtn">Dropdown</button>
-      <div class="dropdown-content">
-          <svg-icon class="input-group-text" src="assets/google.svg" [svgStyle]="{ 'width.px':20}"></svg-icon>Google
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
+      <div class="dropbtn">
+        <svg-icon class="svg-icon" src={{iconPath}} [svgStyle]="{'width.px':20}"></svg-icon>
+        {{defaultOption}}
+      </div>
+      <div class="dropdown-content">        
+        <div (click)="clicGoogle()">
+          <svg-icon class="svg-icon" src='assets/google.svg'[svgStyle]="{'width.px':20}"></svg-icon>
+          Google
+        </div>
+        <div (click)="clickYoutube()">
+            <svg-icon class="svg-icon" src='assets/youtube.svg'[svgStyle]="{'width.px':20}"></svg-icon>
+            Youtube
+        </div>
       </div>
     </div>
-    <input type="text" id="searchword" name="word" size="40" class="input2"> 
-    <input type="submit" class="btn btn-primary" id="b-btn" value="Go!">
+    <input type="text" id="searchword"> 
+    <input type="submit" class="btn btn-primary" id="submit-button" value="Go!">
 </form>
 </div>  
 

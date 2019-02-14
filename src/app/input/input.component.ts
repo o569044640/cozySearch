@@ -7,9 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InputComponent implements OnInit {
 
-  constructor() { }
+  defaultOption: string;
+  iconPath: string;
+
+  constructor() {
+    this.defaultOption = 'Google';
+    this.iconPath = 'assets/google.svg';
+   }
 
   ngOnInit() {
+  }
+
+  clicGoogle() {
+    this.defaultOption = 'Google';
+    this.iconPath = 'assets/google.svg';
+  }
+
+  clickYoutube() {
+    this.defaultOption = 'Youtube';
+    this.iconPath = 'assets/youtube.svg';
   }
 
 }
