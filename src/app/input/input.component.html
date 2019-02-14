@@ -1,11 +1,11 @@
 <div class="container center" >
-  <form id="search-form" action="//www.google.com" target="_blank" class="center">
+  <form id="search-form" action={{formAction}} method="get" target="_blank" class="center">
     <div class="dropdown">
       <div class="dropbtn">
         <svg-icon class="svg-icon" src={{iconPath}} [svgStyle]="{'width.px':20}"></svg-icon>
         {{defaultOption}}
       </div>
-      <div class="dropdown-content">        
+      <div class="dropdown-content">
         <div (click)="clicGoogle()">
           <svg-icon class="svg-icon" src='assets/google.svg'[svgStyle]="{'width.px':20}"></svg-icon>
           Google
@@ -17,10 +17,10 @@
       </div>
     </div>
     <label>
-      <input type="text" id="searchword"> 
+      <input type="text" id="searchword" name={{inputName}}>
     </label>
     <input type="submit" class="btn btn-primary" id="submit-button" value="Go!">
 </form>
-</div>  
+</div>
 
 

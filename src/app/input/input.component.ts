@@ -9,10 +9,14 @@ export class InputComponent implements OnInit {
 
   defaultOption: string;
   iconPath: string;
+  inputName: string;
+  formAction: string;
 
   constructor() {
     this.defaultOption = 'Google';
     this.iconPath = 'assets/google.svg';
+    this.inputName = 'q';
+    this.formAction = '//www.google.com/search';
    }
 
   ngOnInit() {
@@ -21,11 +25,15 @@ export class InputComponent implements OnInit {
   clicGoogle() {
     this.defaultOption = 'Google';
     this.iconPath = 'assets/google.svg';
+    this.inputName = 'q';
+    this.formAction = '//www.google.com/search';
   }
 
   clickYoutube() {
     this.defaultOption = 'Youtube';
     this.iconPath = 'assets/youtube.svg';
+    this.inputName = 'search_query';
+    this.formAction = '//www.youtube.com/results';
   }
 
 }
