@@ -36,4 +36,11 @@ export class InputComponent implements OnInit {
     this.formAction = '//www.youtube.com/results';
   }
 
+  clickAmazon() {
+    this.defaultOption = 'Amazon';
+    this.iconPath = 'assets/amazon.svg';
+    this.inputName = 'k';
+    this.formAction = '//www.amazon.com/s';
+  }
+
 }
