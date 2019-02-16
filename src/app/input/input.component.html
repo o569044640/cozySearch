@@ -1,9 +1,9 @@
-<div class="container center" >
+<div class="container center" style="margin-top: -60px">
   <form id="search-form" action={{formAction}} method="get" target="_blank" class="center">
     <div class="dropdown">
       <div class="dropbtn">
         <svg-icon class="svg-icon" src={{iconPath}} [svgStyle]="{'width.px':20}"></svg-icon>
-        {{defaultOption}}
+        <span style="font-family: cursive; padding-left: 3px; color: rgb(253, 253, 253)" >{{defaultOption}}</span>
       </div>
       <div class="dropdown-content">
         <div (click)="clicGoogle()">
